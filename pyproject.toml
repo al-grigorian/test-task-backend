@@ -1,0 +1,19 @@
+[project]
+name = "test-task-backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Alexander",email = "alx050@mail.ru"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[all] (>=0.116.1,<0.117.0)",
+    "sqlalchemy[asyncio] (>=2.0.43,<3.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
