@@ -1,5 +1,2 @@
-# Python cache
 __pycache__/
-
-# Poetry lock file
-poetry.lock
+.env
