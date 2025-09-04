@@ -4,7 +4,25 @@
 
 <img width="1233" height="865" alt="ER-диаграмма" src="https://github.com/user-attachments/assets/4792991f-116b-4c66-9108-0724390050e2" />
 
-##Веб-приложение на **FastAPI + SQLAlchemy (async)** с PostgreSQL в качестве базы данных.  
+## SQL-запросы
+
+### 2.1
+
+```sql
+SELECT 
+    c.name AS client_name,
+    COALESCE(SUM(oi.quantity * oi.price), 0) AS total_sum
+FROM shop.client c
+LEFT JOIN shop."order" o ON o.client_id = c.id
+LEFT JOIN shop.order_item oi ON oi.order_id = o.id
+GROUP BY c.name
+ORDER BY total_sum DESC;
+```
+
+### 2.2
+
+
+## Веб-приложение на **FastAPI + SQLAlchemy (async)** с PostgreSQL в качестве базы данных.  
 
 ## Стек технологий
 
