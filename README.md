@@ -21,6 +21,24 @@ ORDER BY total_sum DESC;
 
 ### 2.2
 
+```sql
+SELECT
+  c.id,
+  c.name,
+  COUNT(child.id) AS children_count
+FROM shop.category c
+LEFT JOIN shop.category child ON child.parent_id = c.id
+GROUP BY c.id, c.name
+ORDER BY children_count DESC, c.name;
+```
+
+### 2.3.1
+
+
+
+### 2.3.2
+
+
 
 ## Веб-приложение на **FastAPI + SQLAlchemy (async)** с PostgreSQL в качестве базы данных.  
 
