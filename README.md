@@ -1,6 +1,10 @@
 # Test Task Backend
 
-Веб-приложение на **FastAPI + SQLAlchemy (async)** с PostgreSQL в качестве базы данных.  
+## Даталогическая модель
+
+<img width="1233" height="865" alt="ER-диаграмма" src="https://github.com/user-attachments/assets/4792991f-116b-4c66-9108-0724390050e2" />
+
+##Веб-приложение на **FastAPI + SQLAlchemy (async)** с PostgreSQL в качестве базы данных.  
 
 ## Стек технологий
 
